@@ -13,11 +13,11 @@ import { API_KEY } from '../../data'
 
 const Feed = ({category}) => {
 
-  const [data,setData]=useState([]);
-  const fetchData= async()=>{
-    const videoList_url=`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=India&videoCategoryId=${category}&key=${API_KEY}`
-  await fetch(videoList_url).then(response=>response.json()).then(data=>setData(data.items))
-  }
+  // const [data,setData]=useState([]);
+  // const fetchData= async()=>{
+  //   const videoList_url=`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=India&videoCategoryId=${category}&key=${API_KEY}`
+  // await fetch(videoList_url).then(response=>response.json()).then(data=>setData(data.items))
+  // }
 
   useEffect(()=>{
     fetchData();
