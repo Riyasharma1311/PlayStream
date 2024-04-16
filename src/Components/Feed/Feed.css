@@ -4,6 +4,7 @@
     grid-column-gap: 16px;
     grid-row-gap: 30px;
     margin-top: 15px;
+    background-color: #F0F2F1;
 }
 .card img{
     width: 100%;
