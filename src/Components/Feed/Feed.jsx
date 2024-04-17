@@ -1,12 +1,15 @@
+//import 'dotenv/config';
 import React, { useEffect, useState } from 'react'
 import  './Feed.css'
 import { Link } from 'react-router-dom'
-import { API_KEY, value_converter } from '../../data'
+import {value_converter } from '../../data'
 import moment from 'moment';
+//require('dotenv').config();
 
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const Feed = ({category}) => {
-
+console.log(API_KEY);
   const [data,setData]=useState([]);
 
   const fetchData= async()=>{

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Recommended.css'
-import { API_KEY } from '../../data'
 import { value_converter } from '../../data'
 import { Link } from 'react-router-dom'
+//require('dotenv').config();
+const API_KEY = import.meta.env.VITE_API_KEY;
 const Recommended = ({categoryId}) => {
 
     const [apiData,setApiData]=useState([]);
